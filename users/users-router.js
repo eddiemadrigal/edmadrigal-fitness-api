@@ -1,9 +1,8 @@
+// endpoints: /api/users
 
 const router = require('express').Router();
 const Users = require('./users-model');
-// const restricted = require('../auth/authenticate-middleware');
 
-// router.get('/', restricted, (req, res) => {
 router.get('/', (req, res) => {
   Users.find()
     .then(users => {
@@ -12,4 +11,4 @@ router.get('/', (req, res) => {
     .catch(err => res.send(err));
 })
 
-module.exports = router;
+module.exports = router; 
