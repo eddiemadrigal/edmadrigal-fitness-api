@@ -1,6 +1,9 @@
 #psql commands
 psql-commands.txt
 
+#heroku installation
+heroku.txt
+
 # Logs
 logs
 *.log
